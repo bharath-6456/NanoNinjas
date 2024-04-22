@@ -14,10 +14,7 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.3",
-<<<<<<< HEAD
-=======
     "react-redux": "^9.1.1",
->>>>>>> 8c266e877d628ce0c18f70fcd2eb55873fba4482
     "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
     "styled-components": "^6.1.8",
