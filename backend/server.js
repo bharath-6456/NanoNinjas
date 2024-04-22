@@ -12,8 +12,8 @@ app.use(exp.json())
 const mongodb = require('mongodb').MongoClient
 
 // Deploying react build to this server
-const path = require('path')
-app.use(exp.static(path.join(__dirname, '../build')))
+// const path = require('path')
+// app.use(exp.static(path.join(__dirname, '../build')))
 
 // Database connection
 mongodb.connect(process.env.DB_URL)
@@ -25,7 +25,7 @@ mongodb.connect(process.env.DB_URL)
     app.set('contractors', contractors)
     console.log("DB connection established")
   })
-  .catch(err => clg("Error in DB", err))
+  .catch(err => console.log("Error in DB", err))
 
 // Importing Apis
 const farmerApp = require('./APIs/farmer-api')

@@ -50,3 +50,6 @@ farmerApp.post('/login', expressAsyncHandler(async (req, res) => {
     }
   }
 }))
+
+// Export farmerApp
+module.exports = farmerApp
