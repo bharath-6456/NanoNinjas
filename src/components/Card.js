@@ -8,7 +8,7 @@ export default function Card(props) {
   };
   return (
     <div>
-      <div className="card m-3 text-center" style={{ width: "20rem" }}>
+      <div className="card m-3 text-center shadow p-3 mb-5 bg-body-tertiary rounded" style={{ width: "20rem" }}>
         <img
           src={props.image}
           className="card-img-top"
@@ -40,7 +40,7 @@ export default function Card(props) {
             <h5>Total Prize: {hrs * 500}</h5>
           </h5>
         </div>
-        <Link to="/Login">
+        <Link to="/RegistrationForm">
           <button class="btn btn-success center m-3 mt-1" type="submit">
             Book Now
           </button>
