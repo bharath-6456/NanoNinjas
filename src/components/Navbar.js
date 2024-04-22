@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Weather from './Weather';
 
 export default function Navbar() {
   return (
@@ -37,6 +38,7 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
+          <Weather />
         </div>
       </nav>
     </div>
