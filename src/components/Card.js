@@ -8,7 +8,7 @@ export default function Card(props) {
   };
   return (
     <div>
-      <div className="card m-3 text-center" style={{ width: "19rem" }}>
+      <div className="card m-3 text-center" style={{ width: "20rem" }}>
         <img
           src={props.image}
           className="card-img-top"
@@ -31,7 +31,7 @@ export default function Card(props) {
             onChange={handlechange}
             className="h-20 m-2"
             name="hrs"
-            style={{ width: "35px" }}
+            style={{ "width": "35px"}}
             value={hrs}
           />
         </div>
