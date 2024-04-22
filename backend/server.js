@@ -18,22 +18,18 @@ const mongodb = require('mongodb').MongoClient
 // Database connection
 mongodb.connect(process.env.DB_URL)
   .then(client => {
-    const blogobj = client.db('farmerdb')
-    const farmers = blogobj.collection('farmerscollection')
-    const contractors = blogobj.collection('contractorscollection')
-    app.set('farmers', farmers)
-    app.set('contractors', contractors)
+    const toolobj = client.db('toolsdb')
+    const users = toolobj.collection('userscollection')
+    app.set('users', users)
     console.log("DB connection established")
   })
-  .catch(err => console.log("Error in DB", err))
+  .catch(err => console.log("Error in DB connection", err))
 
-// Importing Apis
-const farmerApp = require('./APIs/farmer-api')
-const contractorApp = require('./APIs/contractor-api')
+// Importing Api
+const userApp = require('.user-api')
 
-// Sending requests to resp routes
-app.use('/farmer-api', farmerApp)
-app.use('/contractor-api', contractorApp)
+// Sending requests to route
+app.use('/user-api', userApp)
 
 // Handling page refresh
 app.use((req, res, next) => {
