@@ -6,11 +6,7 @@ export default function Card(props) {
     const [hrs, sethrs] = useState(0);
         const handlechange = (e) => {
     sethrs(e.target.value);
-  };
-  
-  
-  
-
+  };      
     return (
         <div>
         
@@ -34,14 +30,14 @@ export default function Card(props) {
                
             </ul>
             <div className='container w-100'>
-                <label>enter no.of hrs</label>
+                <label>Enter No. of Hrs</label>
                 <input onChange={handlechange} className='w-50 h-20' name='hrs' value={hrs}/>
             </div>
             <div>
                 <h5 className='container w-100'>
 
                    <h5>
-                    TotalPrize: {hrs*5}</h5>
+                    TotalPrize: {hrs*500}</h5>
                 </h5>
             </div>
             <Link to='/Login'>
