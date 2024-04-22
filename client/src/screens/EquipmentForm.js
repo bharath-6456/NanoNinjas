@@ -21,7 +21,7 @@ function EquipmentForm() {
       <div className='mx-auto'>
         <label className='form-label'>Name</label>
         <input type='text' className='form-control w-75 mx-auto' {...register('name', { required: true })} />
-        <label className='form-label'>Email</label>
+        <label className='form-label align-center'>Email</label>
         <input type='email' className='form-control w-75 mx-auto' {...register('email', { required: true })} />
         <label className='form-label'>Phone number</label>
         <input type='text' className='form-control w-75 mx-auto' {...register('phone', { required: true, minLength: 10, maxLength: 10 })} />
