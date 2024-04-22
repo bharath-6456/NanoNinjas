@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Weather from './Weather';
-
 export default function Navbar() {
   return (
     <div>
@@ -22,6 +21,9 @@ export default function Navbar() {
               <Link className="nav-link text-white" to="/Signup">Sign Up</Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link text-white" to="/Appie">Sign In</Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link text-white" to="/Pricelist">Prices</Link>
             </li>
             <li className="nav-item">
@@ -31,7 +33,11 @@ export default function Navbar() {
               <Link className="nav-link text-white" to="/registrationForm">BookNow</Link>
             </li>
             <li className="nav-item">
+<<<<<<< HEAD
               <Link className="nav-link text-white" to="/toolRegistration">Add Your Tools</Link>
+=======
+              <Weather/>
+>>>>>>> 8c266e877d628ce0c18f70fcd2eb55873fba4482
             </li>
           </ul>
           <ul className="navbar-nav">
@@ -41,7 +47,6 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-          <Weather />
         </div>
       </nav>
     </div>
