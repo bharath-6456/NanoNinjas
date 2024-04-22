@@ -33,11 +33,8 @@ export default function Navbar() {
               <Link className="nav-link text-white" to="/registrationForm">BookNow</Link>
             </li>
             <li className="nav-item">
-<<<<<<< HEAD
               <Link className="nav-link text-white" to="/toolRegistration">Add Your Tools</Link>
-=======
-              <Weather/>
->>>>>>> 8c266e877d628ce0c18f70fcd2eb55873fba4482
+              <Weather />
             </li>
           </ul>
           <ul className="navbar-nav">

@@ -51,5 +51,12 @@ userApp.post('/login', expressAsyncHandler(async (req, res) => {
   }
 }))
 
+//Route to register tools
+userApp.post('/toolsubmit', expressAsyncHandler(async (req, res) => {
+  const tool = req.body
+  await toolObj.insertOne(tool)
+  res.send({ message: "New tool created" })
+}))
+
 // Export userApp
 module.exports = userApp
