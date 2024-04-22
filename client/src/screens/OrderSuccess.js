@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
 const OrderSuccess = () => {
   const navigate = useNavigate()
   const handleclick = () => {
@@ -18,8 +17,10 @@ const OrderSuccess = () => {
               <p>Your order has been successfully placed. Thank you for your purchase!</p>
               <p>We'll send you a confirmation email shortly.</p>
             </div>
+            <div className='col-12 mx-auto text-center'>
+              <button className='btn btn-success mt-0 mb-3' onClick={handleclick}>Go Back</button>
+            </div>
           </div>
-          <button className='btn btn-success' onClick={handleclick}>Go Back</button>
         </div>
       </div>
     </div>

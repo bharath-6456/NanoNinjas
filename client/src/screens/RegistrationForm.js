@@ -12,7 +12,7 @@ export default function RegistrationForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Handle form submission logic here
-    navigate('/oderSuccess');
+    navigate('/orderSuccess');
   };
 
   return (
