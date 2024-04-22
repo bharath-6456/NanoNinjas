@@ -22,8 +22,8 @@ userApp.use((req, res, next) => {
 
 // Route to register
 userApp.post('/register', expressAsyncHandler(async (req, res) => {
-  let user = req.body
-  const dbuser = await userObj.findOne({ username: user.username })
+  let body = req.body
+  const dbuser = await userObj.findOne({ username: body.username })
   if (dbuser !== null)
     res.send({ message: "user already exists" })
   else {
@@ -36,8 +36,8 @@ userApp.post('/register', expressAsyncHandler(async (req, res) => {
 
 // Route to login
 userApp.post('/login', expressAsyncHandler(async (req, res) => {
-  const user = req.body
-  const dbuser = await userObj.findOne({ username: user.username })
+  const body = req.body
+  const dbuser = await userObj.findOne({ username: body.username })
   if (dbuser === null)
     res.send({ message: "Invalid username" })
   else {
@@ -45,7 +45,7 @@ userApp.post('/login', expressAsyncHandler(async (req, res) => {
     if (status === false)
       res.send({ message: "Invalid password" })
     else {
-      const signedToken = jwt.sign({ username: dbuser.username }, process.env.SECRET_KEY, { expiresIn: 'id' })
+      const signedToken = jwt.sign({ username: dbuser.username }, process.env.SECRET_KEY, { expiresIn: '1d' })
       res.send({ message: "Login successful", token: signedToken, user: dbuser })
     }
   }

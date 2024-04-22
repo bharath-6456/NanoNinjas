@@ -1,15 +1,21 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+// import Appie from './screens/Appie.js'
+=======
+>>>>>>> f92e3b1eb1e8e141350b924dd9f8ff7b8899cab5
+>>>>>>> a60bd3fde7efdfa0df9e3dc4c290756c0c6a46d0
 import Home from './screens/Home';
 import Login from './screens/Login';
 import Signup from './screens/Signup.js';
 import About from './screens/About.js';
 import Profile from './screens/Profile.js';
 
-import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+// import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
+// import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+// import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import Pricelist from './screens/Pricelist.js';
 import RegistrationForm from './screens/RegistrationForm.js';
 import OrderSuccess from './screens/OrderSuccess.js';
