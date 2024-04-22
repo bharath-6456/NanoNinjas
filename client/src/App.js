@@ -12,6 +12,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
 import Pricelist from './screens/Pricelist.js';
 import RegistrationForm from './screens/RegistrationForm.js';
 import OrderSuccess from './screens/OrderSuccess.js';
+import EquipmentForm from './screens/EquipmentForm.js';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/registrationForm" element={<RegistrationForm />} />
           <Route exact path="/orderSuccess" element={<OrderSuccess />} />
+          <Route exact path="/toolRegistration" element={<EquipmentForm />} />
         </Routes>
       </div>
     </Router>

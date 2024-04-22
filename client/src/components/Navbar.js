@@ -30,6 +30,9 @@ export default function Navbar() {
             <li className="nav-item">
               <Link className="nav-link text-white" to="/registrationForm">BookNow</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/toolRegistration">Add Your Tools</Link>
+            </li>
           </ul>
           <ul className="navbar-nav">
             <li className="nav-item">
