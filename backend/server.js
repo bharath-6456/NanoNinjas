@@ -13,7 +13,7 @@ const mongodb = require('mongodb').MongoClient
 
 // Deploying react build to this server
 const path = require('path')
-app.use(exp.static(path.join(__dirname, '../build')))
+app.use(exp.static(path.join(__dirname, '../client/build')))
 
 // Database connection
 mongodb.connect(process.env.DB_URL)
