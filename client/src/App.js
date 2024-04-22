@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Appie from './screens/Appie.js'
+// import Appie from './screens/Appie.js'
 import Home from './screens/Home';
 import Login from './screens/Login';
 import Signup from './screens/Signup.js';
