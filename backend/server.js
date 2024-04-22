@@ -26,7 +26,7 @@ mongodb.connect(process.env.DB_URL)
   .catch(err => console.log("Error in DB connection", err))
 
 // Importing Api
-const userApp = require('.user-api')
+const userApp = require('./user-api')
 
 // Sending requests to route
 app.use('/user-api', userApp)
