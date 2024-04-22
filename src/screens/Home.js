@@ -3,6 +3,9 @@ import Navbar from '../components/Navbar'
 import Card from '../components/Card'
 import Footer from '../components/Footer'
 import Carousel from '../components/Carousel';
+import RegistrationForm from './RegistrationForm';
+import { Link } from 'react-router-dom';
+
 // import tools from '../toolsgo';
 
 const tools= [
@@ -29,11 +32,23 @@ const tools= [
       "dealerName":"ellivesh",
       "contactno":"987485296",
       "image":"https://img.freepik.com/premium-photo/excavator-earthmoving-coal-open-pit-sunset-background-recycling-coal-mining-industry_124507-67585.jpg?size=626&ext=jpg&ga=GA1.1.2061423295.1690085389&semt=sph"
-  }
+  },
+  {
+    "toolName":"corn_harvester",
+    "dealerName":"Medraid",
+    "contactno":"987485256",
+    "image":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbkjvB4n41J2p0ICvbfmDZnGfKoGkb_QTWMgv5llZjlhUSwvOpY5kO67VhS9Rl"
+},
+{
+  "toolName":"land-Tover",
+  "dealerName":"Mellaid",
+  "contactno":"987485256",
+  "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIaBBd_Wm8A6V6b3my0QEdjRJHrSMODPXEVG2sp1SebYPki9uRLLbpzGa_Ptqv"
+}
 ];
 export default function Home() {
   
- 
+  
   return (
    
     <div>
@@ -52,10 +67,11 @@ export default function Home() {
         
        
       </div>
-       <div>
+      
+    
         <Footer/>
        </div>
        
-    </div>
+    
   )
 }
