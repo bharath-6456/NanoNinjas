@@ -50,3 +50,7 @@ contractorApp.post('/login', expressAsyncHandler(async (req, res) => {
     }
   }
 }))
+
+
+// Export contractorApp
+module.exports = contractorApp
