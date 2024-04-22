@@ -18,7 +18,7 @@ app.use(exp.static(path.join(__dirname, '../build')))
 // Database connection
 mongodb.connect(process.env.DB_URL)
   .then(client => {
-    const blogobj = client.db('blogdb')
+    const blogobj = client.db('farmerdb')
     const farmers = blogobj.collection('farmerscollection')
     const contractors = blogobj.collection('contractorscollection')
     app.set('farmers', farmers)
