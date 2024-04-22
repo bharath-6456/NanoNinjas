@@ -18,7 +18,7 @@ export default function Card(props) {
 
         <div className="card-body">
           <h2 className="card-title">{props.toolName}</h2>
-          <h5 className="card-text">{props.dealerName}</h5>
+          <h6 className="card-text">Dealer : {props.dealerName}</h6>
         </div>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
@@ -26,12 +26,14 @@ export default function Card(props) {
           </li>
         </ul>
         <div className="container w-100">
-          <label>Enter No. of Hrs:</label>
+          <label>Enter No.of Hrs:</label>
           <input
+            type="number"
+            min={0}
             onChange={handlechange}
             className="h-20 m-2"
             name="hrs"
-            style={{ "width": "35px"}}
+            style={{ "width": "60px" }}
             value={hrs}
           />
         </div>
@@ -41,7 +43,7 @@ export default function Card(props) {
           </h5>
         </div>
         <Link to="/RegistrationForm">
-          <button class="btn btn-success center m-3 mt-1" type="submit">
+          <button class="btn btn-success center m-3 mt-1">
             Book Now
           </button>
         </Link>

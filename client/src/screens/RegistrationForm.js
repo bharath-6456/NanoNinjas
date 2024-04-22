@@ -16,8 +16,8 @@ export default function RegistrationForm() {
   };
 
   return (
-    <div className="container py-5" style={{ maxWidth: "600px", border: "2px solid #ddd", borderRadius: "8px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
-      <h2 className="mb-4 text-center">Booking</h2>
+    <div className="container py-5 mt-2" style={{ maxWidth: "600px", border: "2px solid #ddd", borderRadius: "8px", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)" }}>
+      <h2 className="mb-4 text-center">Booking Form</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
@@ -29,7 +29,7 @@ export default function RegistrationForm() {
         </div>
         <div className="mb-3">
           <label htmlFor="phone" className="form-label">Phone Number</label>
-          <input type="tel" className="form-control" id="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+          <input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" className="form-control" id="phone" minLength={10} maxLength={10} value={phone} onChange={(e) => setPhone(e.target.value)} required />
         </div>
         <div className="mb-3">
           <label htmlFor="date" className="form-label">Date</label>
